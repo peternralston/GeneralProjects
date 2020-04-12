@@ -12,6 +12,12 @@ Most recent revision: 0
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    #centerMe {
+      text-align: center;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -22,85 +28,88 @@ Most recent revision: 0
     <hr />
 
     <nav>
-      <!--We need to add new pages for the following pages benieth-->
-      <p> <a href="index.html">Home</a> | <a href="menu.html">Menu</a> | <a href="contact-us.html">Contact Us</a></p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1" id="centerMe"><a href="index.html">Home</a></div>
+          <div class="col-md-1" id="centerMe">|</div>
+          <div class="col-md-1" id="centerMe"><a href="menu.html">Menu</a></div>
+          <div class="col-md-1" id="centerMe">|</div>
+          <div class="col-md-2" id="centerMeid="centerMe"><a href="contact-us.html">Contact Us</a></div>
+          <div class=col-md-6 </div>
+          </div>
     </nav>
 
     <hr />
 
     <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-responsive center-block" src="images/chopHouseMain.jpg" alt="Main Chop House Image" style="height:250px">
+                </div>
 
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img class="img-responsive center-block" src="images/chopHouseMain.jpg" alt="Main Chop House Image" style="height:250px">
+                <div class="item">
+                  <img class="img-responsive center-block" src="images/chopHouseBread.jpg" alt="Image Of Gourmet Bread at Chop House" style="height:250px">
+                </div>
+
+                <div class="item">
+                  <img class="img-responsive center-block" src="images/chopHouseScalops.jpg" alt="Image Of Gourmet Scallops" style="height:250px">
+                </div>
+                <!-- Left and right controlls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div> <!-- end of middle coloumn -->
+          <div class="col-sm-2"></div>
+        </div> <!-- end of first row -->
+
+        <div class="row">
+          <!-- Start of second row-->
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            <article id="about-me">
+              <h2><em>About Us</em></h2>
+              <p style>Proin posuere feugiat odio, in euismod enim scelerisque sit amet. Sed non volutpat nunc. Suspendisse potenti. Aenean ut diam scelerisque justo tempus fermentum. Quisque porta leo non laoreet ullamcorper. Sed dapibus urna sit
+                amet arcu
+                commodo
+                gravida. Morbi dictum libero dui. </p>
+              <p>Fusce dignissim felis ultricies purus lobortis, non tristique urna ultrices. Curabitur ligula metus, mollis volutpat imperdiet eget, euismod ut purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus posuere
+                sapien,
+                id
+                elementum ex mollis non.</p>
+            </article>
           </div>
-
-          <div class="item">
-            <img class="img-responsive center-block" src="images/chopHouseBread.jpg" alt="Image Of Gourmet Bread at Chop House" style="height:250px">
-          </div>
-
-          <div class="item">
-            <img class="img-responsive center-block" src="images/chopHouseScalops.jpg" alt="Image Of Gourmet Scallops" style="height:250px">
-          </div>
-          <!-- Left and right controlls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-
-          <a class="right carousel-control" href="#myCarousel" data-slide="next" >
-            <span class="glyphicon glyphon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
-
-        </div>
-
-
+          <div class="col-sm-2"></div>
+        </div><!-- end of second row-->
       </div>
-      <!--<img src="images\chopHouseMain.jpg" alt="The Chop House" style="text-center" />-->
-      <article id="about-me">
-        <h2><em>About me</em></h2>
-        <p>Proin posuere feugiat odio, in euismod enim scelerisque sit amet. Sed non volutpat nunc. Suspendisse potenti. Aenean ut diam scelerisque justo tempus fermentum. Quisque porta leo non laoreet ullamcorper. Sed dapibus urna sit amet arcu
-          commodo
-          gravida. Morbi dictum libero dui. </p>
-        <p>Fusce dignissim felis ultricies purus lobortis, non tristique urna ultrices. Curabitur ligula metus, mollis volutpat imperdiet eget, euismod ut purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus posuere sapien,
-          id
-          elementum ex mollis non.</p>
-      </article>
-
-      <article id="past-experiences">
-        <h2><em>Past Experiences</em></h2>
-        <p>Proin posuere feugiat odio, in euismod enim scelerisque sit amet. Sed non volutpat nunc. Suspendisse potenti. Aenean ut diam scelerisque justo tempus fermentum. Quisque porta leo non laoreet ullamcorper. Sed dapibus urna sit amet arcu
-          commodo
-          gravida. Morbi dictum libero dui. </p>
-        <p>Fusce dignissim felis ultricies purus lobortis, non tristique urna ultrices. Curabitur ligula metus, mollis volutpat imperdiet eget, euismod ut purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus posuere sapien,
-          id
-          elementum ex mollis non.</p>
-      </article>
-
-      <article id="hobbies">
-        <h2><em><a href="http;//www.google.com" target="_blank">Hobbies</a></em></h2>
-        <p>Proin posuere feugiat odio, in euismod enim scelerisque sit amet. Sed non volutpat nunc. Suspendisse potenti. Aenean ut diam scelerisque justo tempus fermentum. Quisque porta leo non laoreet ullamcorper. Sed dapibus urna sit amet arcu
-          commodo
-          gravida. Morbi dictum libero dui. </p>
-        <p>Fusce dignissim felis ultricies purus lobortis, non tristique urna ultrices. Curabitur ligula metus, mollis volutpat imperdiet eget, euismod ut purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus posuere sapien,
-          id
-          elementum ex mollis non.</p>
-      </article>
     </section>
     <hr />
 
 
     <footer>
-      &copy; 2020 Venture Desings; All rights reserved
+      <div>
+        <p id="centerMe"> &copy; 2020 Venture Desings; All rights reserved</P>
+        <p id="centerMe">3900 American Blvd W, Bloomington, MN 55437</P>
+      </div>
     </footer>
   </main>
 </body>
