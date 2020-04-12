@@ -16,6 +16,14 @@ Most recent revision: 0
     #centerMe {
       text-align: center;
     }
+
+    .form-text {
+      text-align: right;
+    }
+
+    .center {
+      text-align: center;
+    }
   </style>
 
 </head>
@@ -25,6 +33,7 @@ Most recent revision: 0
     <header class="container">
       <h1 class="text-center">The Chop House</h1>
     </header>
+
     <hr />
 
     <nav>
@@ -35,19 +44,102 @@ Most recent revision: 0
           <div class="col-md-1" id="centerMe"><a href="menu.html">Menu</a></div>
           <div class="col-md-1" id="centerMe">|</div>
           <div class="col-md-2" id="centerMe"><a href="contact-us.html">Contact Us</a></div>
-          <div class=col-md-6 </div>
-          </div>
+          <div class=col-md-6> </div>
+        </div>
+      </div>
     </nav>
 
     <hr />
 
     <section>
-      <p>
-        <h1 id="centerMe">This is the Contact Us Page</h1>
-      </p>
+      <form class="fpr=horizontal" action="/action_page.php">
+        <div class="form-group row">
+          <label class="control-label col-sm-4 form-text" for="name">Name:</label>
+          <div class="col-sm-4">
+            <input type="name" class="form-control" id="name" placeholder="Enter name" />
+          </div>
+          <div class="col-sm-4"> </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="control-label col-sm-4 form-text" for="email">Email:</label>
+          <div class="col-sm-4">
+            <input type="email" class="form-control" id="email" placeholder="name@yourdomain.com" />
+          </div>
+          <div class="col-sm-4"> </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="control-label col-sm-4 form-text" for="phone">Phone:</label>
+          <div class="col-sm-4">
+            <input type="phone" class="form-control" id="phone" placeholder="888-888-8888" />
+          </div>
+          <div class="col-sm-4"> </div>
+        </div>
+
+        <div class="form-group row">
+          <!--Place Dropdown here -->
+          <label class="control-label col-sm-4 form-text" for="sel1">Reason for Inquiry:</label>
+          <div class="col-sm-4">
+            <select class="form-control" id="sel1">
+              <option>Catering</option>
+              <option>Private Party</option>
+              <option>Feedback</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="col-sm-4"> </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="control-label col-sm-4 form-text" for="additionalInformation">Additional Information:</label>
+          <div class="col-sm-4">
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+
+        <div class="form-group row">
+          <label class="control-label col-sm-4 form-text" for="additionalInformation">Have you been to the Restaurant?</label>
+          <div class="col-sm-4">
+            <label class="radio-inline"><input type="radio" name="optradio" checked>Yes</label>
+            <label class="radio-inline"><input type="radio" name="optradio">No</label>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="control-label col-sm-4 form-text" for="bestDaysToContact">Best days to contact you?</label>
+          <div class="col-sm-4">
+            <label class="checkbox-inline">
+              <input type="checkbox" value="M">M
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" value="T">T
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" value="W">W
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" value="Th">Th
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" value="F">F
+            </label>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-sm-4 col-md-4 col-lg-4"></div>
+          <div class="col-sm-4 col-md-4 col-lg-4 center">
+            <button type="submit" class="btn btn-default">Send Request</button>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4"></div>
+        </div>
+
+      </form>
     </section>
     <hr />
-
 
     <footer>
       <div>
